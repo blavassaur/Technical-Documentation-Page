@@ -10,18 +10,18 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="navbar">
         <ul>
-            <h1 id="navTitle">JS DOCUMENTATION</h1>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#what_you_should_already_know">What you should already know</a></li>
-            <li><a href="#javascript_and_java">Javascript and Java</a></li>
-            <li><a href="#hello_world">Hello world</a></li>
-            <li><a href="#introduction">Variables</a></li>
-            <li><a href="#introduction">Declaring Variables</a></li>
-            <li><a href="#introduction">Variable Scope</a></li>
-            <li><a href="#introduction">Global Variables</a></li>
-            <li><a href="#introduction">Constants</a></li>
+            <header><h1 id="navTitle">JS DOCUMENTATION</h1></header>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#what_you_should_already_know">What you should already know</a></li>
+            <li><a class="nav-link" href="#javascript_and_java">Javascript and Java</a></li>
+            <li><a class="nav-link" href="#hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#variables">Variables</a></li>
+            <li><a class="nav-link" href="#declaring_variables">Declaring Variables</a></li>
+            <li><a class="nav-link" href="#variable_scope">Variable Scope</a></li>
+            <li><a class="nav-link" href="#global_variables">Global Variables</a></li>
+            <li><a class="nav-link" href="#constants">Constants</a></li>
         </ul>
     </nav>
     <main id="main-doc">
@@ -65,9 +65,9 @@
                 </ul>
             </article>
         </section>
-        <section id="java_and_javascript" class="main-section">
+        <section id="javascript_and_java" class="main-section">
             <header>
-                <h1>Java and Javascript</h1>
+                <h1>Javascript and Java</h1>
             </header>
             <article>
                 <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The
@@ -95,7 +95,7 @@
         </section>
         <section id="hello_world" class="main-section">
             <header>
-                <h1>Hello world!</h1>
+                <h1>Hello world</h1>
             </header>
             <article>
                 <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world"
@@ -106,6 +106,34 @@
 greetMe("World");</code>
                 <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
                 </p>
+            </article>
+        </section>
+        <section id="variables" class="main-section">
+            <header>
+                <h1>Variables</h1>
+            </header>
+            <article>
+                <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+                <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+                <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
+                </p>
+            </article>
+        </section>
+        <section id="declaring_variables" class="main-section">
+            <header>
+                <h1>Declaring Variables</h1>
+            </header>
+            <article>
+                <p>You can declare a variable in three ways:</p>
+                <p>With the keyword var. For example,</p>
+                <code>var x = 42.</code>
+                <p>This syntax can be used to declare both local and global variables.</p>
+                <p>By simply assigning it a value. For example,</p>
+                <code>x = 42.</code>
+                <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
+                <p>With the keyword let. For example,</p>
+                <code>let y = 13.</code>
+                <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
             </article>
         </section>
     </main>
